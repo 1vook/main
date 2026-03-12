@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача № 6</title>
+    <script>
+      let cost = parseInt(prompt(`Яка вартість товару в гривнях?`, 20));
+      let number = parseInt(prompt(`А скільки одиниць товару Ви маєте?`, 8));
+      let sum = cost * number;
+      document.write(`
+      <h3>Чек за оплату</h3>
+<h4>Фрілансер по життю</h4>
+<h5>ФОП Брила Андрій Юрійович</h5>
+<p>Вартість товару за 1 шт. - ${cost} грн.</p>
+<p>Загальна вартість за ${number} шт. - ${sum} гривень</p>
+<p>Передбачення: наполегливість сьогодні приведе тебе до успіху завтра.</p>
+      `);
+    </script>
+  </head>
+  <body></body>
+</html>
