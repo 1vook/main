@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4</title>
+    <script>
+      // 4.	З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером)
+      const age = parseFloat(prompt(`Вкажіть вік людини`, "33"));
+      if (age <= 6) {
+        document.write(`Дитина у садочку`);
+      } else if (age <= 16) {
+        document.write(`Школяр`);
+      } else if (age <= 22) {
+        document.write(`Студент`);
+      } else if (age <= 60) {
+        document.write(`Працівник`);
+      } else document.write(`Пенсіонер`);
+    </script>
+  </head>
+  <body></body>
+</html>

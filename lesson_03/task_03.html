@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3</title>
+    <script>
+      // 3.	Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+      const number = Math.floor(Math.random() * 5 + 1);
+      let putNumber = parseFloat(
+        prompt(`Спробуйте вгадати число від 1 до 5`, "3"),
+      );
+      if (putNumber === number) document.write(`Вітаю! Ви вгадали число!`);
+      else {
+        putNumber = parseInt(prompt(`Ні, спробуй вгадати ще раз`, "3"));
+        if (putNumber === number) document.write(`Вітаю! Ви вгадали число!`);
+        else document.write(`Нажаль ти не вгадав`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

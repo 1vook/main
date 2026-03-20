@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7</title>
+    <script>
+      // З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+      const monthNumber = parseInt(prompt(`Вкажіть номер місяця`, "8"));
+      switch (monthNumber) {
+        case 1:
+          document.write(`Це січень, зимова пора року`);
+          break;
+
+        case 2:
+          document.write(`Це лютий, зимова пора року`);
+          break;
+
+        case 3:
+          document.write(`Це березень, весняна пора року`);
+          break;
+
+        case 4:
+          document.write(`Це квітень, весняна пора року`);
+          break;
+
+        case 5:
+          document.write(`Це травень, весняна пора року`);
+          break;
+
+        case 6:
+          document.write(`Це червень, літня пора року`);
+          break;
+
+        case 7:
+          document.write(`Це липень, літня пора року`);
+          break;
+
+        case 8:
+          document.write(`Це серпень, літня пора року`);
+          break;
+
+        case 9:
+          document.write(`Це вересень, осіння пора року`);
+          break;
+
+        case 10:
+          document.write(`Це жовтень, осіння пора року`);
+          break;
+
+        case 11:
+          document.write(`Це листопад, осіння пора року`);
+          break;
+
+        case 12:
+          document.write(`Це грудень, зимова пора року`);
+          break;
+
+        default:
+          document.write(
+            `Всього 12 місяців, онови сторінку та вкажи номер одногу з них`,
+          );
+          break;
+      }
+      // Можна було і через if але хотів попрактикуватись в цьому
+    </script>
+  </head>
+  <body></body>
+</html>

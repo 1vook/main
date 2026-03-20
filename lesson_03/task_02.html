@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+    <script>
+      // 2.	З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+
+      const cost = parseFloat(
+        prompt(`Введіть ціну товару в гривнях`, "4267.5"),
+      );
+      const buyerMoney = parseFloat(
+        prompt(`Вкажіть скільки грошей маєте на покупку`, "5000"),
+      );
+      const rest = buyerMoney - cost;
+      if (buyerMoney < cost) document.write(`В покупці відмовлено`);
+      else if (rest >= 4)
+        document.write(
+          `Вітаємо з покупкою! На решту пропонуємо вам придбати лотарейку, вартість однієї 4 гривні, ви можете взяти - ${Math.floor(rest / 4)} штук.`,
+        );
+      else document.write(`Вітаємо з покупкою!`);
+    </script>
+  </head>
+  <body></body>
+</html>

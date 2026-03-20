@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5</title>
+    <script>
+      // 5.	З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+
+      const category = prompt(
+        `Яку категорію посвідчення водія Ви маєте, А,B,C ?`,
+        `B`,
+      );
+      switch (category) {
+        case `A`:
+          document.write(`Ви можете керувати мотоциклами`);
+          break;
+        case `B`:
+          document.write(`Ви можете керувати легковими автомобілями`);
+          break;
+        case `C`:
+          document.write(`Ви можете керувати вантажними автомобілями`);
+
+        default:
+          document.write(`Ви не маєте прав`);
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
