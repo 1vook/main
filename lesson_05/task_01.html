@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01</title>
+    <script>
+      //Поступово генерувати 100 випадкових чисел від 1 до 1000. Підрахувати яких чисел більше: парних чи непарних.
+      if (confirm("Почати тестування?")) {
+        let evenNumber = 0
+        let oddNumber = 0
+
+        for (let i = 0; i < 100; i++) {
+          const randomNumber = Math.floor(Math.random() * 1000) + 1
+          document.write(`${randomNumber} <br>`)
+          if (randomNumber % 2 === 0) evenNumber++
+          else oddNumber++
+        }
+
+        if (evenNumber > oddNumber)
+          document.write(
+            `Парних чисел: ${evenNumber} > непарних чисел: ${oddNumber}`,
+          )
+        else if (oddNumber > evenNumber)
+          document.write(
+            `Непарних чисел: ${oddNumber} > парних чисел: ${evenNumber}`,
+          )
+        else document.write(`Парних та непарних чисел порівну`)
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

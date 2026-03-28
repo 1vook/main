@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5</title>
+    <script>
+      // Користувач поступово вводить прибуток магазину за кожен день протягом N тижнів. Знайти загальну величину прибутку та вивести величину прибутку протягом кожного окремого тижня.
+      if (confirm("Почати тестування?")) {
+        const weeks = parseInt(
+          prompt(`За скільки тижнів будемо рахувати прибуток?`, "2"),
+        )
+        const day = weeks * 7
+        let profit = 0
+        let weekProfit = 0
+        for (let index = 1; index <= day; index++) {
+          let dayProfit = parseInt(
+            prompt(`Введіть прибуток за ${index} день`, "1300"),
+          )
+          document.write(
+            `Прибуток за ${index} день становить - ${dayProfit} грн. <br>`,
+          )
+          profit += dayProfit
+          weekProfit += dayProfit
+
+          if (index % 7 === 0) {
+            document.write(
+              `Прибуток за ${index / 7} тиждень: ${weekProfit} грн <br>`,
+            )
+            weekProfit = 0
+          }
+        }
+        document.write(
+          `Загальна сума прибутку за ${weeks} тижнів становить - ${profit} грн.`,
+        )
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

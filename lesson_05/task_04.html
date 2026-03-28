@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4</title>
+    <script>
+      // Вивести на екран N абзаців (N вводиться користувачем) за зразком
+      if (confirm("Почати тестування?")) {
+        const paragraph = parseInt(prompt(`Введіть кількість абзаців`, "8"))
+
+        document.write(`
+      <h1>Заголовок ${paragraph}</h1>
+         `)
+        for (let index = 1; index <= paragraph; index++)
+          document.write(`
+      <p>Розділ ${paragraph}, параграф ${index}</p>
+      
+         `)
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3</title>
+    <script>
+      // Вивести таблицю з 3 рядків і 7 стовпців
+      if (confirm("Почати тестування?")) {
+        document.write("<table>")
+        for (let row = 0; row < 3; row++) {
+          let number = 1
+          document.write("<tr>")
+          for (let column = 0; column < 7; column++, number++) {
+            document.write(`<td>${number}</td>`)
+          }
+
+          document.write("</tr>")
+        }
+
+        document.write("</table>")
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
