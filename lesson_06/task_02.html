@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+    <script>
+      // Спортсмен-лижник в перший день тренування пробіг 10 км. Кожного наступного дня він збільшував довжину пробігу на P% від довжини пробігу попереднього дня (P – дійсне число, 0 < P < 50). Визначити, після якого дня тренування сумарний пробіг лижника за всі дні перевищить 200 км. Вивести знайдену кількість днів K (ціле) і сумарний пробіг S (дійсне число).
+
+      let distancePerDay = 10
+      let S = 0
+      let K = 0
+      let p = parseInt(
+        prompt(
+          `Вкажіть на скільки відсотків ми будемо збільшувати дистанцію кожного наступного дня? (від 1 до 49)`,
+          "30",
+        ),
+      )
+      while (S < 200) {
+        //   let p = Math.floor(1 + Math.random() * 49)
+        K++
+        S += distancePerDay
+        distancePerDay += distancePerDay * (p / 100)
+        document.write(
+          `День № ${K.toFixed(0)}, дистанція за день ${distancePerDay.toFixed(0)} км <br>`,
+        )
+      }
+      document.write(
+        `Загальна кількість днів - ${K.toFixed(0)}, сумарний пробіг - ${S.toFixed(0)} км.`,
+      )
+    </script>
+  </head>
+  <body></body>
+</html>

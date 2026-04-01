@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1</title>
+  </head>
+  <body>
+    <!-- <p>
+      Зобразити рівнобедрений трикутник із символів ^. Висоту задає користувач.
+    </p>
+    <div><img src="../src/img/triangle.jpg" alt="triangle" /></div> -->
+    <script>
+      // Зобразити рівнобедрений трикутник із символів ^. Висоту задає користувач.
+      const height = parseInt(prompt(`Введіть висоту трикутника`, "6"))
+      document.write(`<div style="text-align: center;">`)
+      for (let h = 1; h <= height; h++) {
+        for (let s = 0; s < h; s++) {
+          document.write("^")
+        }
+        document.write(`<br>`)
+      }
+      document.write(`</div>`)
+    </script>
+  </body>
+</html>
