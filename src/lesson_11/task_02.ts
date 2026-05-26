@@ -1,42 +1,42 @@
-// Функція для генерації рандомного числа
-function getRandomNumber(minValue: number, maxValue: number) {
-  return Math.floor(Math.random() * (maxValue - minValue) + minValue)
-}
+// // Функція для генерації рандомного числа
+// function getRandomNumber(minValue: number, maxValue: number) {
+//   return Math.floor(Math.random() * (maxValue - minValue) + minValue)
+// }
 
-// Для генерація одного масив
-function getRandomArray(
-  arrayLength: number,
-  minValue: number,
-  maxValue: number,
-) {
-  const arr = []
-  for (let i = 0; i < arrayLength; i++) {
-    const randNum = getRandomNumber(minValue, maxValue)
-    arr.push(randNum)
-  }
-  return arr
-}
+// // Для генерація одного масив
+// function getRandomArray(
+//   arrayLength: number,
+//   minValue: number,
+//   maxValue: number,
+// ) {
+//   const arr = []
+//   for (let i = 0; i < arrayLength; i++) {
+//     const randNum = getRandomNumber(minValue, maxValue)
+//     arr.push(randNum)
+//   }
+//   return arr
+// }
 
-// Генерація умовної таблиці
-function generateRandomTable(
-  rowNumber: number,
-  columnNumber: number,
-  minValue: number,
-  maxValue: number,
-) {
-  const table = []
-  for (let i = 0; i < rowNumber; i++) {
-    const randomRow = getRandomArray(columnNumber, minValue, maxValue)
-    table.push(randomRow)
-  }
-  return table
-}
+// // Генерація умовної таблиці
+// function generateRandomTable(
+//   rowNumber: number,
+//   columnNumber: number,
+//   minValue: number,
+//   maxValue: number,
+// ) {
+//   const table = []
+//   for (let i = 0; i < rowNumber; i++) {
+//     const randomRow = getRandomArray(columnNumber, minValue, maxValue)
+//     table.push(randomRow)
+//   }
+//   return table
+// }
 
-// НАШ МАСИВ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-let someArr = generateRandomTable(4, 7, 1, 300)
-document.write(`<h3>Наш масив - ${someArr}</h3>`)
-console.log(someArr)
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// // НАШ МАСИВ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// let someArr = generateRandomTable(4, 7, 1, 300)
+// document.write(`<h3>Наш масив - ${someArr}</h3>`)
+// console.log(someArr)
+// // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // Дано інформацію про прибуток К магазинів протягом тижня. Знайти :
 // 1) загальний прибуток кожного масиву за тиждень;
