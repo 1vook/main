@@ -22,5 +22,6 @@ inputs.forEach((input) => {
     inputClicks++
 
     inputCounter.textContent = String(inputClicks)
+
   })
 })
